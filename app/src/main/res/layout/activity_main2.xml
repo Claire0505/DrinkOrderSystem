@@ -41,7 +41,8 @@
         app:layout_constraintTop_toBottomOf="@+id/ed_drink" />
 
     <RadioGroup
-        android:id="@+id/radioGroup2"
+        android:id="@+id/sugarRadioGroup"
+        android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -50,25 +51,29 @@
 
         <RadioButton
             android:id="@+id/radioButton"
-            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/no_sugar" />
 
         <RadioButton
             android:id="@+id/radioButton2"
-            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/less_sugar" />
 
         <RadioButton
             android:id="@+id/radioButton3"
-            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/half_sugar" />
 
         <RadioButton
             android:id="@+id/radioButton4"
-            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/standard_sugar" />
     </RadioGroup>
@@ -80,11 +85,12 @@
         android:layout_marginTop="24dp"
         android:text="@string/ice"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toStartOf="@+id/radioGroup2"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+        app:layout_constraintStart_toStartOf="@+id/sugarRadioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/sugarRadioGroup" />
 
     <RadioGroup
-        android:id="@+id/radioGroup3"
+        android:id="@+id/iceRadioGroup"
+        android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -93,24 +99,28 @@
 
         <RadioButton
             android:id="@+id/radioButton5"
-            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/no_ice" />
 
         <RadioButton
             android:id="@+id/radioButton6"
+            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/low_ice" />
 
         <RadioButton
             android:id="@+id/radioButton7"
-            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/less_ice" />
 
         <RadioButton
             android:id="@+id/radioButton8"
+            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/normal_ice" />
@@ -122,7 +132,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="@string/send"
-        app:layout_constraintStart_toStartOf="@+id/radioGroup3"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup3" />
+        app:layout_constraintStart_toStartOf="@+id/iceRadioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/iceRadioGroup" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

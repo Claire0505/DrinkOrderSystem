@@ -3,7 +3,7 @@
     <string name="order">點餐：</string>
     <string name="choice">選擇</string>
     <string name="confirmOrder">確認餐點：</string>
-    <string name="meal">飲料： 無<br/><br/>甜度： 無<br/><br/>冰塊： 無</string>
+    <string name="meal">飲料： 無 <br/><br/>甜度： 無 <br/><br/>冰塊： 無</string>
     <string name="drink">飲料</string>
     <string name="inputDrinkName">請輸入飲料名稱</string>
     <string name="send">送出</string>
